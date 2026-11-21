@@ -1,20 +1,23 @@
-# Soham Dey portfolio
+# Soham Dey's portfolio
 
-A single-page portfolio built with React, TanStack Start, Vite, and Tailwind CSS.
-The portrait, project screenshots, and organization logos are served from `public/images`.
+My portfolio is a single page built with React, TanStack Start, Vite, and Tailwind CSS. The work section includes TRINETRAA, my work on financial fraud detection, alongside the Dharitri cattle health platform and Cluster Lens, an image segmentation tool.
 
-## Local development
+Project descriptions, screenshots, and contact links are listed in `src/lib/constants.ts`. The portrait, project screenshots, and organization logos live in `public/images`.
 
-With Node.js and Bun installed, run:
+## Run locally
+
+You'll need Node.js and Bun. From the project folder, run
 
 ```sh
 bun install --frozen-lockfile
 bun run dev
 ```
 
-Open http://localhost:8080. Run `bun test` to check the shared portfolio data.
+Open http://localhost:8080. Run `bun test` to check the contact and résumé links and the order of the organization logos.
 
-## Production
+## Build for production
+
+To run the production build locally, use
 
 ```sh
 bun run build
