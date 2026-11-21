@@ -1,0 +1,10 @@
+- Use the shared Button variants for portfolio actions so focus and interaction timing stay consistent.
+- Keep portfolio contact destinations in the shared constants module so header, hero and footer cannot drift.
+- Keep the top-of-page anchor outside the sticky hero so native return-to-top navigation resolves to the document start.
+- Gate SVG orbit motion on the reduced-motion preference because CSS animation overrides do not stop SVG animateMotion.
+- Keep the curated work showcase in shared constants with verified repository and live URLs and actual project screenshot assets; this avoids runtime GitHub rate limits and placeholder project proof.
+- Keep work-row selection available through hover, keyboard focus and click, and hit-test the stationary mouse pointer on scroll; preserve keyboard-focused rows until pointer interaction resumes so scrolling and accessible navigation coexist.
+- Keep each project's details and repository action inside its own expanding work row, with inactive details inert; this prevents crossing other rows from changing the project before its action is reached.
+- Keep About's cover in normal document flow over the sticky hero, and coordinate its single title/body reveal with GSAP matchMedia; this preserves reverse scrolling and immediate reduced-motion layout without scroll locks.
+- Keep only UI primitives reachable from the portfolio and retain framework build dependencies; this avoids unused scaffold without breaking implicit framework entry points.
+- Keep the organization band inside About in normal flow; measure one complete logo sequence including its trailing gap and loop that exact width independently of scroll, with duplicates hidden and a static reduced-motion layout.
