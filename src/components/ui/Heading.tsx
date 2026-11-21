@@ -6,26 +6,16 @@ import { cn } from "@/lib/utils";
  * Keeps heading styles consistent project-wide by mapping a small set of
  * variants to the shared typography tokens defined in src/styles.css.
  */
-export type HeadingVariant =
-  | "display-hero"
-  | "display-xl"
-  | "display-lg"
-  | "display-md"
-  | "section"
-  | "cta"
-  | "label";
+type HeadingVariant = "display-hero" | "display-xl" | "section" | "cta";
 
 const VARIANT_CLASSES: Record<HeadingVariant, string> = {
   "display-hero": "type-display-hero",
   "display-xl": "type-display-xl",
-  "display-lg": "type-display-lg",
-  "display-md": "type-display-md",
   // Bold section-intro heading used inside two-column section headers.
   section:
     "text-[32px] font-bold leading-[1.15] tracking-tight text-ink md:text-[40px]",
   // Thin geometric CTA heading ("Let's work together").
   cta: "font-sans text-[40px] font-normal leading-none tracking-normal md:text-[56px] xl:text-[80px]",
-  label: "type-label",
 };
 
 type HeadingProps = {

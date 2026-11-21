@@ -1,8 +1,5 @@
 export const PERSON = {
   fullName: "Soham Dey",
-  brand: "Soham Dey",
-  role: "Product Designer",
-  company: "Loom Corporate",
 } as const;
 
 export const NAV_LINKS = [

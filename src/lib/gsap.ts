@@ -10,5 +10,3 @@ export function registerGsap() {
   registered = true;
   return { gsap, ScrollTrigger };
 }
-
-export { gsap, ScrollTrigger };
