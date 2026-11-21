@@ -8,3 +8,5 @@
 - Keep About's cover in normal document flow over the sticky hero, and coordinate its single title/body reveal with GSAP matchMedia; this preserves reverse scrolling and immediate reduced-motion layout without scroll locks.
 - Keep only UI primitives reachable from the portfolio and retain framework build dependencies; this avoids unused scaffold without breaking implicit framework entry points.
 - Keep the organization band inside About in normal flow; measure one complete logo sequence including its trailing gap and loop that exact width independently of scroll, with duplicates hidden and a static reduced-motion layout.
+- Size About's panel from its reference title/body composition rather than a viewport minimum or auto-distributed spacing; this keeps the biography directly below the heading without surplus black space.
+- Keep the My Work heading on About's coordinate grid — same left margin, arrow sized to the letters — so the two display headings read as one system.

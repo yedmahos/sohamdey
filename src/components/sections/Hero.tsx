@@ -15,7 +15,7 @@ export function Hero() {
         <HeroOrbit />
         <div className="pointer-events-none absolute inset-0 z-40 flex flex-col px-10 md:px-14">
           <p className="pointer-events-auto mt-[calc(4.75rem+clamp(2rem,5vw,3rem))] max-w-[14rem] text-[clamp(1.25rem,1.8vw,1.5rem)] font-medium leading-[1.35] text-ink md:max-w-[18rem]">
-            Designer &amp; Developer
+            AI Engineer &amp; Developer
           </p>
         </div>
         <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-[58%] z-0 flex -translate-y-1/2 overflow-x-clip overflow-y-visible py-[0.12em] [@media(max-height:450px)]:top-[66%]">
@@ -31,7 +31,7 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <h1 className="sr-only">{PERSON.fullName} — designer and developer</h1>
+        <h1 className="sr-only">{PERSON.fullName} — AI engineer and developer</h1>
         <img src={HERO_IMAGE.url} alt={HERO_IMAGE.alt} width={HERO_IMAGE.width} height={HERO_IMAGE.height}
           fetchPriority="high" decoding="async"
           className="pointer-events-none absolute bottom-0 left-1/2 z-20 h-[80%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom md:h-[96%]" />

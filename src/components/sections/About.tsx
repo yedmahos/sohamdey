@@ -57,14 +57,14 @@ export function About() {
         </svg>
       </h2>
       <div data-about-body className="about-body">
-        <svg aria-hidden="true" viewBox="0 0 100 100" className="about-arrow text-about-arrow" fill="none">
-          <path d="M 7 93 L 92 8 M 14 8 H 92 V 86" stroke="currentColor" strokeWidth="14" strokeLinecap="butt" strokeLinejoin="miter" />
+        <svg aria-hidden="true" viewBox="0 0 175 175" className="about-arrow text-about-arrow" fill="currentColor">
+          <polygon points="22,0 175,0 175,153 150,153 150,43 18,175 0,157 132,25 22,25" />
         </svg>
         <div className="about-copy">
           <blockquote className="about-biography text-about-copy">
             &ldquo;I build software that people use in their daily work. At KIIT, I led a team that helped over 60 rural families replace paper logbooks with an app for tracking their cattle’s health. I’ve also trained machine learning models to spot patterns in financial fraud and worked alongside a startup founder to launch campaigns.&rdquo;
           </blockquote>
-          <p className="mt-8 text-sm text-process-muted">
+          <p className="about-availability text-process-muted">
             Currently available as intern.
           </p>
         </div>

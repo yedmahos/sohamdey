@@ -153,56 +153,74 @@
   }
 }
 
-/* About uses reference coordinates, with one constant-size title reveal. */
+/* About follows the uploaded composition; content determines panel height. */
 .about-panel {
-  min-height: 100svh;
-  padding-top: 8.61vw;
-  padding-bottom: 4.5vw;
+  padding-top: 4.9vw;
+  padding-bottom: 2.7vw;
+  display: flex;
+  flex-direction: column;
 }
 .about-title {
   margin: 0 0 0 11.6vw;
-  width: 60.14vw;
-  height: 28.26vw;
+  width: 33.1vw;
+  height: 15.57vw;
   line-height: 1;
   letter-spacing: 0;
 }
 .about-body {
   display: grid;
-  grid-template-columns: 15.97vw minmax(0, 49.65vw);
-  column-gap: 7.02vw;
-  margin-top: 3.125vw;
+  grid-template-columns: 10.52vw minmax(0, 49.65vw);
+  column-gap: 3.83vw;
+  margin-top: 1.98vw;
   margin-left: 17.01vw;
   align-items: start;
 }
-.about-arrow { width: 15.97vw; height: 15.97vw; }
-.about-biography { font-size: 20px; line-height: 30px; font-weight: 400; }
+.about-arrow { width: 9.1vw; height: 9.1vw; }
+.about-biography { font-size: 25px; line-height: 39px; font-weight: 400; }
+.about-availability { margin-top: 52px; font-size: 20px; line-height: 28px; }
+@media (max-width: 1535px) {
+  .about-biography { font-size: 20px; line-height: 30px; }
+  .about-availability { margin-top: 32px; font-size: 16px; line-height: 24px; }
+}
 @media (max-width: 767px) {
-  .about-panel { min-height: 100svh; padding-top: 120px; padding-bottom: 28px; }
+  .about-panel { padding-top: 112px; padding-bottom: 28px; }
   .about-title { margin-left: 6vw; width: 70vw; height: 32.9vw; }
   .about-body {
-    margin: 40px 6vw 0;
+    margin: 32px 6vw 0;
     grid-template-columns: 56px minmax(0, 1fr);
     column-gap: 20px;
   }
   .about-arrow { width: 56px; height: 56px; }
   .about-biography { font-size: 17px; line-height: 26px; }
+  .about-availability { font-size: 14px; line-height: 20px; }
 }
 @media (min-width: 768px) and (max-width: 1100px) {
-  .about-panel { padding-top: 112px; }
+  .about-panel { padding-top: 64px; padding-bottom: 32px; }
   .about-biography { font-size: 18px; line-height: 28px; }
 }
-/* Short viewports: scale the panel so the whole About (title + body) fits
-   on screen when navigating via the navbar anchor. */
+
+/* My Work shares About's coordinates so the two headings read as one system:
+   same left margin, same optical band, arrow sized to the letters. */
+.work-panel {
+  padding-left: 11.6vw;
+  padding-right: 10.35vw;
+}
+.work-title {
+  height: 19.2vw;
+  width: auto;
+  aspect-ratio: 1232 / 407;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.work-arrow { width: 19.2vw; height: 19.2vw; }
+@media (max-width: 767px) {
+  .work-panel { padding-left: 6vw; padding-right: 6vw; }
+  .work-title { height: 20vw; }
+  .work-arrow { width: 20vw; height: 20vw; }
+}
 @media (min-width: 768px) and (max-height: 800px) {
-  .about-panel { padding-top: 64px; padding-bottom: 24px; }
-  .about-title { height: min(28.26vw, 30vh); width: auto; aspect-ratio: 866 / 407; }
-  .about-body {
-    margin-top: 24px;
-    grid-template-columns: min(15.97vw, 120px) minmax(0, 49.65vw);
-    column-gap: 5vw;
-  }
-  .about-arrow { width: min(15.97vw, 120px); height: min(15.97vw, 120px); }
-  .about-biography { font-size: 17px; line-height: 26px; }
+  .work-title { height: min(19.2vw, 20vh); }
+  .work-arrow { width: min(19.2vw, 20vh); height: min(19.2vw, 20vh); }
 }
 
 /* Fluid display type (§4, §13) */

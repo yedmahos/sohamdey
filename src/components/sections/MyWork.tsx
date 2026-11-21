@@ -70,18 +70,18 @@ export function MyWork() {
   }, []);
 
   return (
-    <section id="work" ref={sectionRef} aria-labelledby="work-heading" className="relative z-10 bg-work-surface px-6 py-16 text-ink md:px-16 md:py-24">
-      <div className="mx-auto max-w-[1440px]">
+    <section id="work" ref={sectionRef} aria-labelledby="work-heading" className="work-panel relative z-10 bg-work-surface py-16 text-ink md:py-24">
+      <div>
         <div data-reveal className="flex flex-wrap items-end justify-between gap-6 pb-12 md:pb-20">
-          <div className="flex flex-nowrap items-end gap-2 md:gap-3">
-            <h2 id="work-heading" className="aspect-[1232/407] h-[clamp(44px,15vw,84px)] w-auto font-display text-ink md:h-[120px]">
+          <div className="flex flex-nowrap items-end gap-0.5 md:gap-1">
+            <h2 id="work-heading" className="work-title font-display text-ink">
               <span className="sr-only">My Work</span>
               <svg aria-hidden="true" viewBox="0 0 1232 407" className="block h-full w-full" fill="currentColor">
                 <polygon points="0,407 23,407 80,0 57,0" />
                 <text x="101" y="368" fontSize="410" fontWeight="400" textLength="1131" lengthAdjust="spacingAndGlyphs">MY WORK</text>
               </svg>
             </h2>
-            <DiagonalArrow className="h-[clamp(44px,15vw,84px)] w-auto shrink-0 self-end text-about-arrow md:h-[120px]" />
+            <DiagonalArrow className="work-arrow shrink-0 self-end text-about-arrow" />
           </div>
         </div>
 
